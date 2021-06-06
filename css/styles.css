@@ -1,0 +1,293 @@
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family:'Arial Narrow', Arial, sans-serif }
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+/* Componente Botón WhatsApp flotante */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#000000;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #000000;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+header{
+  text-align: center;
+}
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: #ffffff; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: block; text-decoration: none; color: rgb(255, 255, 255); background: #000000; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#abrir-menu:hover { background: #000000;}
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: none; text-decoration: none; color: rgb(255, 255, 255); background: #4b4b4b; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { background: #888888;}
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: rgb(34, 34, 34); font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none;}
+aside#menu-moviles nav a:hover { color: #ffffff;}
+
+
+/* bloque categorias */
+
+main section#bloque-categorias { width: 100%; height: auto; margin: 35px auto 75px; float: none; position: relative; }
+main section#bloque-categorias nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias nav a { width: 31%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a#img-básicas { background: url('../img/basica\ el\ david.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-talegos { background: url('../img/talego\ candente.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-tops { background: url('../img/top\ labios.jpeg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: rgb(228, 228, 228); transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+
+/* bloque categorias 1 */
+
+main section#bloque-categorias1 { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative;  }
+main section#bloque-categorias1 nav { width: 1100px; height: auto; left: 6%; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias1 nav a { width: 40%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block;  }
+
+
+main section#bloque-categorias1 nav a#img-talego1 { background: url('../img/talego\ candente.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias1 nav a#img-top1 { background: url('../img/top\ serpiente.jpeg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias1 nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: rgb(230, 230, 230); transition: all 0.3s ease-in; }
+main section#bloque-categorias1 nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%);}
+
+main section#bloque-categorias1 nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: rgb(206, 206, 206); }
+main section#bloque-categorias1 nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+/* bloque categorias 2 */
+
+
+main section#bloque-categorias2  { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative;  }
+main section#bloque-categorias2  nav { width: 1100px; height: auto; left: 6%; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias2  nav a { width: 40%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias2  nav a#img-básicas2 { background: url('../img/basica\ el\ david.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias2  nav a#img-tops2 { background: url('../img/top\ labios.jpeg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias2  nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: rgb(241, 241, 241); transition: all 0.3s ease-in; }
+main section#bloque-categorias2  nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias2  nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: rgb(216, 216, 216); transition: all 0.3s ease-in; }
+main section#bloque-categorias2  nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+/* bloque categorias 3 */
+
+main section#bloque-categorias3  { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative;  }
+main section#bloque-categorias3  nav { width: 1100px; height: auto; left: 6%; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias3  nav a { width: 40%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias3  nav a#img-básicas3 { background: url('../img/basica\ la\ creación.jpeg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias3 nav a#img-talegos3 { background: url('../img/talego\ serpiente.jpeg') no-repeat top center; background-size: cover; }
+
+
+main section#bloque-categorias3  nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#bloque-categorias3  nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias3  nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: rgb(204, 204, 204); transition: all 0.3s ease-in; }
+main section#bloque-categorias3  nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+
+
+/* BLOQUE PRODUCTO*/
+
+main section.bloque-productos { width: 100%; height: auto; margin: 0 auto 110px; float: none; position: relative; }
+main section.bloque-productos article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.nombre-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px rgb(32, 32, 32); transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.precio-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px rgb(37, 37, 37); transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.nombre-producto { color: rgb(231, 231, 231); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.precio-producto { color: rgb(110, 110, 110); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+
+/* BLOQUE PRODUCTO 1 */
+
+main section.bloque-productos1 { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative; }
+main section.bloque-productos1 article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos1 article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos1 article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos1 article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a span.nombre-producto1 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a span.precio-producto1 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos1 article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a:hover span.nombre-producto1 { color: rgb(61, 61, 61); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a:hover span.precio-producto1 { color: rgb(61, 61, 61); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos1 article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+/* BLOQUE PRODUCTO 2 */
+main section.bloque-productos2 { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative; }
+main section.bloque-productos2 article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos2 article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos2 article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos2 article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-productos2 article nav a span.nombre-producto1 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos2 article nav a span.precio-producto1 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos2 article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos2 article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos2 article nav a:hover span.nombre-producto1 { color: rgb(107, 107, 107); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos2 article nav a:hover span.precio-producto1 { color: rgb(49, 49, 49); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos2 article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+/* BLOQUE PRODUCTO 3 */
+
+main section.bloque-productos3 { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative; }
+main section.bloque-productos3 article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos3 article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos3 article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos3 article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-productos3 article nav a span.nombre-producto3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos3 article nav a span.precio-producto3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos3 article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos3 article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos3 article nav a:hover span.nombre-producto1 { color: rgb(29, 29, 29); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos3 article nav a:hover span.precio-producto1 { color: rgb(46, 46, 46); text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos3 article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+
+
+/*productos*/
+main section#empresa { width: 100%; height: auto; margin: 80px auto 100px; float: none; position: relative; }
+
+main section#empresa div#ancla-empresa { width: 120%; height: 120px; margin: 0; float: none; position: absolute; top: -120px; left: 0; }
+
+main section#empresa article { width: 1100px; height: 520px; margin: 0 auto; float: none; position: relative; }
+main section#empresa article figure { width: 520px; height: 520px; margin: 0 100px 0 0; float: left; position: relative; }
+main section#empresa article figure img { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+
+main section#empresa article div#info-empresa { width: 480px; height: 520px; margin: 0; float: right; position: relative; }
+main section#empresa article div#info-empresa h2 { text-decoration: none; color: #979797; font-weight: 500; font-size: 1.85em; line-height: 1em; text-align: left; padding: 65px 0 20px; letter-spacing: -0.02em; }
+main section#empresa article div#info-empresa h1 { text-decoration: none; color: #818181; font-weight: 800; font-size: 3.8em; line-height: 1em; text-align: left; padding: 0 0 30px; letter-spacing: -0.02em; }
+main section#empresa article div#info-empresa p { color: rgb(41, 41, 41); font-weight: 400; font-size: 1.05em; line-height: 1.45em; text-align: left; padding: 0 52px 30px 0; letter-spacing: 0.015em; }
+main section#empresa article div#info-empresa a { width: 120px; height: auto; margin: 0; float: none; position: relative; display: block; text-decoration: none; color: #fff; background: #c5c4c4; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 12px 22px; border-radius: 25px; }
+main section#empresa article div#info-empresa a:hover { padding: 12px 25px; color: #e0e0e0; background: #555555; }
+
+
+/* slide slider*/
+
+main section#zona-slider {width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative; }
+main section#zona-slider article.slick-slider{ width: 100%; height: 100vh; margin: 0 auto ; float: none; position: relative;}
+main section#zona-slider article.slick-slider figure#slide_01 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('../img/slider1.jpeg') no-repeat top center; background-size: cover;  }
+main section#zona-slider article.slick-slider figure#slide_01 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px rgb(39, 39, 39); transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide_01 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px rgb(51, 51, 51); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider article.slick-slider figure#slide-02 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('../img/slider2.jpeg') no-repeat top center; background-size: cover;   }
+main section#zona-slider article.slick-slider figure#slide-02 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px rgb(46, 46, 46); transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide-02 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px rgb(56, 56, 56); transition: all 0.3s ease-in; text-decoration: none;}
+main section#zona-slider article.slick-slider figure#slide-03 {width: 100%; height: 100vh; margin: 0 ; float: left; position: relative; background: url('../img/slider3.jpeg') no-repeat top center; background-size: cover;   }
+main section#zona-slider article.slick-slider figure#slide-03 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px rgb(56, 56, 56); transition: all 0.3s ease-in; }
+main section#zona-slider article.slick-slider figure#slide-03 a  { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px rgb(51, 51, 51); transition: all 0.3s ease-in; text-decoration: none;}
+
+.slick-prev { left: 25px !important ; z-index: 9 !important ;}
+.slick-next { right:25px  !important ;z-index: 9 !important ;}
+
+
+
+/*slide slider 1*/
+
+main section#zona-slider1 article.slick-slider1 { width: 100%; height: 50vh; margin:  0 auto ; float: none; position: relative;}
+main section#zona-slider1 article.slick-slider1 figure#slide_01 {width: 100%; height: 50vh; margin: 0 ; float: left; position: relative; background: url('../img/slider1.jpeg') no-repeat top center; background-size: cover;  }
+main section#zona-slider1 article.slick-slider1 figure#slide_01 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 37%; top: 50%; z-index: 2; font-size: 6.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px rgb(20, 20, 20); transition: all 0.3s ease-in; }
+
+/*slide slider 2*/
+main section#zona-slider1 article.slick-slider2 { width: 100%; height: 50vh; margin: 0 auto ; float: none; position: relative;}
+main section#zona-slider2 article.slick-slider2 figure#slide-02 {width: 100%; height: 50vh; margin: 0 ; float: left; position: relative; background: url('../img/slider2.jpeg') no-repeat center center; background-size: cover;   }
+main section#zona-slider2 article.slick-slider2 figure#slide-02 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 40%; top: 50%; z-index: 2; font-size: 6.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px rgb(17, 17, 17); transition: all 0.3s ease-in; }
+
+/*slide slider 2*/
+main section#zona-slider3 article.slick-slider3 { width: 100%; height: 50vh; margin: 0 auto ; float: none; position: relative;}
+main section#zona-slider3 article.slick-slider3 figure#slide-03 {width: 100%; height: 50vh; margin: 0 ; float: left; position: relative; background: url('../img/slider3.jpeg') no-repeat center center; background-size: cover;   }
+main section#zona-slider3 article.slick-slider3 figure#slide-03 h3 { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 32%; top: 50%; z-index: 2; font-size: 6.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px rgb(15, 15, 15); transition: all 0.3s ease-in; }
+
+
+
+
+/* Componente Footer  */
+footer { width: 100%; height: 200px;margin: 0 auto; position: relative;background: url(../img/footer.jpeg) no-repeat center top fixed rgba(65, 65, 65, 0.685);
+    background-size: cover;    display: block;}
+   
+footer article { width: 150%; }
+    footer article { width: 150px;height: auto; margin: 0 auto;  float: none;position: relative;}
+    footer article div#superior-footer { width: 250%;height: 250px;  margin: 0 auto 30px; float: none; position: relative;}
+    footer article div#superior-footer div.cajas-footer { width: 260px;height: 260px; margin: 0 60px 0 0; float: left; position: relative;}
+    footer article div#superior-footer div.cajas-footer img { width: auto;height: 100px;margin: 100px 20px 100px;display: block;float: none; position: relative;}
+    footer article div#superior-footer div.cajas-footer a { width: 70px;width: 70px;height: auto;float: none;position: relative;display: block;text-align: right; bottom: 180px; font-size: 1.8em;margin: 100px; text-decoration: none;color: #eeeeee;transition: all 0.2s ease-in;}
+        
+        
+    
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 100%; }
+    header article figure { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+
+    footer { width: 115%; height: 200px;margin: 0 auto; position: relative;background: url(../img/footer.jpeg) no-repeat center top fixed rgba(136, 136, 136, 0.685);
+        background-size: cover;    display: block;}
+       
+        aside#boton-wp { width: 45px; height: 45px; margin: float: none; position: fixed; right: 20px; bottom: 20px; z-index: 99998; }
+
+
+@media only screen and (max-width: 799px)
+{ 
+    
+}
+
+@media only screen and (max-width: 899px)
+{ main section#bloque-categorias nav a { width: 96%; margin: 2% auto; display: block; 
+    
+}
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+    main section.bloque-productos article { width: 90%; }
+        
+}
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){    
+}
